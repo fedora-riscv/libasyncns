@@ -28,8 +28,8 @@ Development Files for libasyncns Client Development
 %setup -q
 
 %build
-%configure --disable-static --disable-rpath
-make
+%configure --disable-static
+make %{?_smp_mflags}
 
 %install
 rm -rf $RPM_BUILD_ROOT
