@@ -1,5 +1,5 @@
 Name: libasyncns
-Version: 0.5
+Version: 0.6
 Release: 1%{?dist}
 Summary: Asynchronous Name Service Library
 Group: System Environment/Libraries
@@ -51,6 +51,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/libasyncns.pc
 
 %changelog
+* Fri Oct 24 2008 Lennart Poettering <lpoetter@redhat.com> 0.6-1
+- New release
+
 * Sat Aug 23 2008 Lennart Poettering <lpoetter@redhat.com> 0.5-1
 - New release
 
