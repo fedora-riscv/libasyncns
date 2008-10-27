@@ -1,5 +1,5 @@
 Name: libasyncns
-Version: 0.6
+Version: 0.7
 Release: 1%{?dist}
 Summary: Asynchronous Name Service Library
 Group: System Environment/Libraries
@@ -35,6 +35,7 @@ make %{?_smp_mflags}
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
 find $RPM_BUILD_ROOT \( -name *.a -o -name *.la \) -exec rm {} \;
+rm -rf $RPM_BUILD_ROOT/usr/share/doc/libasyncns/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -51,6 +52,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/libasyncns.pc
 
 %changelog
+* Tue Oct 28 2008 Lennart Poettering <lpoetter@redhat.com> 0.7-1
+- New release
+
 * Fri Oct 24 2008 Lennart Poettering <lpoetter@redhat.com> 0.6-1
 - New release
 
