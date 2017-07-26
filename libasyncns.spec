@@ -1,6 +1,6 @@
 Name: libasyncns
 Version: 0.8
-Release: 11%{?dist}
+Release: 12%{?dist}
 Summary: Asynchronous Name Service Library
 Group: System Environment/Libraries
 Source0: http://0pointer.de/lennart/projects/libasyncns/libasyncns-%{version}.tar.gz
@@ -52,6 +52,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/libasyncns.pc
 
 %changelog
+* Wed Jul 26 2017 Fedora Release Engineering <releng@fedoraproject.org> - 0.8-12
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Mass_Rebuild
+
 * Fri Feb 10 2017 Fedora Release Engineering <releng@fedoraproject.org> - 0.8-11
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_26_Mass_Rebuild
 
