@@ -6,7 +6,6 @@ Group: System Environment/Libraries
 Source0: http://0pointer.de/lennart/projects/libasyncns/libasyncns-%{version}.tar.gz
 License: LGPLv2+
 Url: http://0pointer.de/lennart/projects/libasyncns/
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 %description
 A small and lightweight library that implements easy to use asynchronous
