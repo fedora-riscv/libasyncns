@@ -36,9 +36,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 find $RPM_BUILD_ROOT \( -name *.a -o -name *.la \) -exec rm {} \;
 rm -rf $RPM_BUILD_ROOT/usr/share/doc/libasyncns/
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %defattr(-,root,root)
 %doc README LICENSE
