@@ -37,12 +37,10 @@ find $RPM_BUILD_ROOT \( -name *.a -o -name *.la \) -exec rm {} \;
 rm -rf $RPM_BUILD_ROOT/usr/share/doc/libasyncns/
 
 %files
-%defattr(-,root,root)
 %doc README LICENSE
 %{_libdir}/libasyncns.so.*
 
 %files devel
-%defattr(-,root,root)
 %{_includedir}/asyncns.h
 %{_libdir}/libasyncns.so
 %{_libdir}/pkgconfig/libasyncns.pc
