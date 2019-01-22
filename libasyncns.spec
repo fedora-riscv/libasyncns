@@ -21,8 +21,7 @@ Requires: pkgconfig
 %description devel
 Development Files for libasyncns Client Development
 
-%post -p /sbin/ldconfig
-%postun -p /sbin/ldconfig
+%ldconfig_scriptlets
 
 %prep
 %setup -q
