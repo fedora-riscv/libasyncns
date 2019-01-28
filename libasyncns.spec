@@ -2,7 +2,6 @@ Name: libasyncns
 Version: 0.8
 Release: 15%{?dist}
 Summary: Asynchronous Name Service Library
-Group: System Environment/Libraries
 Source0: http://0pointer.de/lennart/projects/libasyncns/libasyncns-%{version}.tar.gz
 License: LGPLv2+
 Url: http://0pointer.de/lennart/projects/libasyncns/
@@ -14,7 +13,6 @@ wrappers around the libc NSS functions getaddrinfo(), res_query() and related.
 
 %package devel
 Summary: Development Files for libasyncns Client Development
-Group: Development/Libraries
 Requires: %{name} = %{version}-%{release}
 Requires: pkgconfig
 
