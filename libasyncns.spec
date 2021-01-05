@@ -7,6 +7,7 @@ License: LGPLv2+
 Url: http://0pointer.de/lennart/projects/libasyncns/
 
 BuildRequires:  gcc
+BuildRequires: make
 %description
 A small and lightweight library that implements easy to use asynchronous
 wrappers around the libc NSS functions getaddrinfo(), res_query() and related.
