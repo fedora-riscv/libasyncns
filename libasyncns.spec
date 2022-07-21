@@ -1,6 +1,6 @@
 Name: libasyncns
 Version: 0.8
-Release: 22%{?dist}
+Release: 23%{?dist}
 Summary: Asynchronous Name Service Library
 Source0: http://0pointer.de/lennart/projects/libasyncns/libasyncns-%{version}.tar.gz
 License: LGPLv2+
@@ -45,6 +45,9 @@ rm -rf $RPM_BUILD_ROOT/usr/share/doc/libasyncns/
 %{_libdir}/pkgconfig/libasyncns.pc
 
 %changelog
+* Thu Jul 21 2022 Fedora Release Engineering <releng@fedoraproject.org> - 0.8-23
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_37_Mass_Rebuild
+
 * Thu Jan 20 2022 Fedora Release Engineering <releng@fedoraproject.org> - 0.8-22
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_36_Mass_Rebuild
 
