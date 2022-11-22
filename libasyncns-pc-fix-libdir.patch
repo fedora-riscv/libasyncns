@@ -1,0 +1,12 @@
+diff --git a/libasyncns.pc.in b/libasyncns.pc.in
+index 6795161..d4ca76f 100644
+--- a/libasyncns.pc.in
++++ b/libasyncns.pc.in
+@@ -1,6 +1,6 @@
+ prefix=@prefix@
+ exec_prefix=${prefix}
+-libdir=${exec_prefix}/lib
++libdir=${exec_prefix}/lib64
+ includedir=${prefix}/include
+ 
+ Name: libasyncns
