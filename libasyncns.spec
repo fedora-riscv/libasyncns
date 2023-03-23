@@ -1,10 +1,12 @@
 Name: libasyncns
 Version: 0.8
-Release: 24%{?dist}
+Release: 24.0.rv64%{?dist}
 Summary: Asynchronous Name Service Library
 Source0: http://0pointer.de/lennart/projects/libasyncns/libasyncns-%{version}.tar.gz
 License: LGPLv2+
 Url: http://0pointer.de/lennart/projects/libasyncns/
+
+Patch0: libasyncns-pc-fix-libdir.patch
 
 BuildRequires:  gcc
 BuildRequires: make
@@ -24,6 +26,8 @@ Development Files for libasyncns Client Development
 
 %prep
 %setup -q
+
+%patch0 -p1
 
 %build
 %configure --disable-static
@@ -45,6 +49,9 @@ rm -rf $RPM_BUILD_ROOT/usr/share/doc/libasyncns/
 %{_libdir}/pkgconfig/libasyncns.pc
 
 %changelog
+* Thu Mar 23 2023 David Abdurachmanov <davidlt@rivosinc.com> - 0.8-24.0.rv64
+- Fix PC file libdir
+
 * Thu Jan 19 2023 Fedora Release Engineering <releng@fedoraproject.org> - 0.8-24
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_38_Mass_Rebuild
 
